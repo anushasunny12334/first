@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'poppins' , sans-serif;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://wallpaperaccess.com/full/1455663.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        padding: 0 8%;
+        position: relative;
+    }
+
+    header {
+    background-color: #110505;
+    color: rgb(25,199,220);
+    text-align: center;
+    padding: 2em 0;
+}
+    nav{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 0;
+    }
+    .welcome{
+        width: 150px;
+        color:rgb(25, 199, 220);
+    }
+    nav ul{
+        flex: 1;
+        text-align: center;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10PX 30PX;
+    }
+    nav ul li a{
+        color: #fdfcfc;
+        text-decoration: none;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        transition: width 0.3s;
+    }
+    nav ul li a:hover::after{
+        width:50%;
+    }
+    .movies h2{
+  font-size:50px;
+  margin-top:25px;
+  margin-left:-110px;
+  font-family:Tahoma;
+}
+
+.cards{
+  width:19%;
+  background-color:rgb(25, 180, 220);
+  border-radius:5px;
+  margin:40px;
+  display:inline-block;
+  margin-left:33px;
+
+}
+
+.cards:hover{
+  box-shadow:2px 2px 10px rgb(246, 243, 243);
+}
+.image img{
+  width:100%;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+}
+.title{
+  text-align:center;
+  padding:5px;
+  }
+.des{
+  text-align:center;
+  padding:4px;
+}
+button{
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color:white;
+  border:1px solid black;
+  padding:8px;
+  border-radius:8px;
+  cursor:pointer;
+  color: black;
+  font-weight: bold;
+}
+.des button:hover{
+  background-color:black;
+  transition:1s;
+  color: white;
+}
+.des a:hover{
+  color:white;
+  transition:1s;
+}
+footer {
+    background-color: #0f0d00;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+}
+body{
+  font-family:Arial;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ticket booking</h1>
+        <nav>
+
+            <ul>
+                <li><a href="movies.html">Home</a></li>
+                <li><a href="plays_book_final.html">Plays</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="concerts.html">Concerts</a></li>
+                <li><a href="Comedy.html">Comedy</a></li>
+                <li><a href="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="movies">
+            <h2 style="color:azure ;padding-left:100px;">Movies</h2>
+            </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/tiger-3-et00313411-1698386589.jpg">
+            </div>
+            <div class="title">
+              <h3>Tiger 3</h3>
+            </div>
+            <div class="des">
+              <p>Action/Thriller</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/tiger-3/ET00313411" target="_blank" style="text-decoration:none;">
+                <button>BOOK NOW</button>
+                
+              </a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/12th-fail-et00363787-1698316138.jpg">
+            </div>
+            <div class="title">
+              <h3>12th Fail</h3>
+            </div>
+            <div class="des">
+              <p>Drama</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/12th-fail/ET00363787" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/trolls-band-together-et00363189-1697017186.jpg">
+            </div>
+            <div class="title">
+              <h3>Trolls Band Together</h3>
+            </div>
+            <div class="des">
+              <p>Animation/Comedy/Fantasy</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/trolls-band-together/ET00363189" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          
+          <div class="cards">
+            <div class="image">
+              <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/khichdi-2-et00368865-1698646979.jpg">
+            </div>
+            <div class="title">
+              <h3>Khichdi 2</h3>
+            </div>
+            <div class="des">
+              <p>Adventure/Comedy</p>
+              <a href="https://in.bookmyshow.com/jalandhar/movies/khichdi-2/ET00368865" target="_blank" style="text-decoration:none;">
+              <button>BOOK NOW</button>
+              </a>
+            </div>
+          </div>
+          <footer>
+            <p>&copy; 2023 Event Management</p>
+        </footer>
+</body>
+</html>
